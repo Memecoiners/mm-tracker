@@ -54,7 +54,7 @@ def watch(message):
         print(f'{message.from_user.username} - {message.from_user.id} -> /watch {transaction_hash}')
 
         bot.send_message(chat_id=message.chat.id,
-                         text='I will notify you once this transaction has received its first confirmation ⏳🕐')
+                         text='I will notify you once this transaction has received its first confirmation ⏳')
 
         while True:
             try:
