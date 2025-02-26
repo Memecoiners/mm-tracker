@@ -26,9 +26,9 @@ def status(message):
         data = r.json()
         confirmed = data['confirmed']
         if confirmed:
-            response = f'Transaction🏷️💲 {transaction_hash} confirmed ✅'
+            response = f'Transaction🏷️💲 {transaction_hash} CONFIRMED ✅'
         else:
-            response = f'Transaction: {transaction_hash} unconfirmed ❌'
+            response = f'Transaction: {transaction_hash} UNCONFIRMED ❌'
         bot.send_message(chat_id=message.chat.id, text=response)
 
     except ValueError as e:
