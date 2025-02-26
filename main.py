@@ -64,7 +64,7 @@ def watch(message):
                 data = r.json()
                 confirmed = data['confirmed']
                 if confirmed:
-                    response = f"`{transaction_hash}` has reached 1 confirmation! 🔔"
+                    response = f"`{transaction_hash}` has reached its 1st confirmation! 🔔"
                     bot.send_message(chat_id=message.chat.id, text=response)
                     break
                 time.sleep(60)
