@@ -27,7 +27,7 @@ def status(message):
         confirmed = data['confirmed']
         if confirmed:
             response = f'Transaction🏷️💲 {transaction_hash} confirmed ✅'
-       else:
+        else:
             response = f'Transaction: {transaction_hash} unconfirmed ❌'
         bot.send_message(chat_id=message.chat.id, text=response)
 
