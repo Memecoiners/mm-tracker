@@ -4,7 +4,7 @@ import requests
 from telebot import TeleBot
 from telebot.types import Update, InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = TeleBot("put your bot token here")
+bot = TeleBot("7532913903:AAEMfUaluoty780nvbELWgq5RRnF69Zying")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
