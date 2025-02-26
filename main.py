@@ -54,7 +54,7 @@ def watch(message):
         print(f'{message.from_user.username} - {message.from_user.id} -> /watch {transaction_hash}')
 
         bot.send_message(chat_id=message.chat.id,
-                         text='I will notify you 🕐 when this transaction has reached 1 confirmation!')
+                         text='I will notify you once this transaction has received its first confirmation ⏳🕐')
 
         while True:
             try:
@@ -64,7 +64,7 @@ def watch(message):
                 data = r.json()
                 confirmed = data['confirmed']
                 if confirmed:
-                    response = f'`{transaction_hash}` has reached 1 confirmation!'
+                    response = f"`{transaction_hash}` has reached 1 confirmation! 🔔"
                     bot.send_message(chat_id=message.chat.id, text=response)
                     break
                 time.sleep(60)
@@ -90,7 +90,7 @@ def watch(message):
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message,
-                 "Welcome to the Crypto Transactional Monitoring Bot! Type /help for more information on how to use this bot.")
+                 "Beam's Tracker Bot | Type /help for more information.")
 
 
 @bot.message_handler(commands=['help'])
