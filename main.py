@@ -4,7 +4,7 @@ import requests
 from telebot import TeleBot
 from telebot.types import Update, InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = TeleBot("7532913903:AAEMfUaluoty780nvbELWgq5RRnF69Zying")
+bot = TeleBot("8172518641:AAE3tJOjOt-lRUy2T-UwILlejtqBH9h5j4w")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
